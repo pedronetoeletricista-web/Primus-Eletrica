@@ -1,5 +1,5 @@
 import { Phone, Clock } from 'lucide-react';
-import logo from 'https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNjk2NWI2YjgwY2UwODE5MTg1MTFmZTQ1NDVhOTViNTg6ZmlsZV8wMDAwMDAwMDkwZDQ3MWY1YWM5MjVhNWFmMjQwNDUwOCIsInRzIjoiMjA0NjYiLCJwIjoicHlpIiwiY2lkIjoiMSIsInNpZyI6IjRjNzMwNmVjYTM4N2EzMWUwMzQyMGQzOTBkOTAwMGNhYjY5NTE5YWM0OGVkZjhlZjgwOTJiMGFiZDE2NzM5MjgiLCJ2IjoiMCIsImdpem1vX2lkIjpudWxsLCJjcyI6bnVsbCwiY3AiOm51bGwsIm1hIjpudWxsfQ==';
+import logo from "../../../assets/PRIMUS.png";
 
 export function Hero() {
   return (

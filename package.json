@@ -1,9 +1,8 @@
 {
   "name": "@figma/my-make-file",
-  "private": false,
+  "private": true,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://pedronetoeletricista-web.github.io/Primus-Eletrica",
   "scripts": {
     "build": "vite build",
     "dev": "vite"

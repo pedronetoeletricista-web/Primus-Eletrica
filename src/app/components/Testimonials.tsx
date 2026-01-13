@@ -20,7 +20,7 @@ const testimonials = [
     date: '05/12/2025'
   },
   {
-    name: 'Cliente 4',
+    name: 'Geovanna Ferreira',
     rating: 5,
     text: 'Excelente profissional! Me atendeu em emergência, foi extremamente atencioso e solícito desde o primeiro contato, demonstrando total disposição para resolver o problema. Explicou tudo com clareza e executou o serviço com muita competência e agilidade. Trabalho muito bem feito! Nota 10, recomendo!!',
     date: '05/01/2025'

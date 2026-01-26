@@ -1,4 +1,10 @@
-@import 'tailwindcss' source(none);
-@source '../**/*.{js,ts,jsx,tsx}';
+@import "tailwindcss";
 
-@import 'tw-animate-css';
+/* Garanta que o scanner vê TODOS os arquivos onde há className */
+@source "../**/*.{html,js,ts,jsx,tsx}";
+
+@import "tw-animate-css";
+
+/* Se você tem o theme.css separado, importe aqui (recomendado) */
+/* @import "./theme.css"; */
+

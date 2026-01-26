@@ -5,12 +5,11 @@
   "type": "module",
   "homepage": "https://primuseletrica.com",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-,
+    "dev": "vite",
+    "build": "vite build && cp dist/index.html dist/404.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
@@ -55,10 +54,12 @@
     "react-day-picker": "8.10.1",
     "react-dnd": "16.0.1",
     "react-dnd-html5-backend": "16.0.1",
+    "react-helmet-async": "^2.0.5",
     "react-hook-form": "7.55.0",
     "react-popper": "2.3.0",
     "react-resizable-panels": "2.1.7",
     "react-responsive-masonry": "2.7.1",
+    "react-router-dom": "6.26.2",
     "react-slick": "0.31.0",
     "recharts": "2.15.2",
     "sonner": "2.0.3",
@@ -67,11 +68,12 @@
     "vaul": "1.1.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "4.1.12",
+    "@tailwindcss/vite": "^4.1.18",
     "@vitejs/plugin-react": "4.7.0",
     "gh-pages": "^6.3.0",
-    "tailwindcss": "4.1.12",
-    "vite": "6.3.5"
+    "tailwindcss": "^4.1.18",
+    "vite": "6.3.5",
+    "vite-prerender-plugin": "^0.5.12"
   },
   "peerDependencies": {
     "react": "18.3.1",

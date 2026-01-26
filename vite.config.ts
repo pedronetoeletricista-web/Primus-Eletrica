@@ -1,20 +1,26 @@
-import { defineConfig } from 'vite'
-import path from 'path'
-import tailwindcss from '@tailwindcss/vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { vitePrerenderPlugin } from "vite-prerender-plugin";
+import { resolve } from "node:path";
 
 export default defineConfig({
-  base: '/',
   plugins: [
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
+    vitePrerenderPlugin({
+      renderTarget: "#root",
+      prerenderScript: resolve(__dirname, "src/prerender.tsx"),
+      additionalPrerenderRoutes: [
+        "/",
+        "/produtos",
+        "/santos",
+        "/sao-vicente",
+        "/praia-grande",
+        "/cubatao",
+        "/privacidade",
+      ],
+    }),
   ],
-  resolve: {
-    alias: {
-      // Alias @ to the src directory
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-})
+});
+
